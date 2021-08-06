@@ -1,0 +1,83 @@
+.container{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #fff;
+}
+.navbar{
+
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    background: #4d5bf9;
+    width: 300px; 
+    box-sizing: initial;
+    border-radius: 10px;
+    border-left: 5px solid rgb(228, 25, 25);
+    transition: 0.5s;
+
+
+}
+.navbar ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+
+}
+.navbar ul li{
+    padding-top: 20px;
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.navbar ul li a{
+    position:relative;
+    display: block;
+    width: 100;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+
+
+}
+.navbar ul li.active{
+    background: #fff;
+
+}
+.navbar ul li a .icon{
+    display: block ;
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+.navbar ul li.active a{
+   color: black;
+
+} 
+
+.navbar ul li a .icon ion-icon{
+    font-size: 1.5em;
+}
+.navbar ul li a .title{
+    position: relative;
+    display: block;
+    padding: left 10px; 
+    height: 60px;
+    white-space: normal;
+}
+.toggle{
+    position:fixed;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" context="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet"  href="css/dashboard.css  ">
+        <title>
+            Menu Display
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <ul>
+                    <li class="list active">
+    
+                                <a href="#">
+                                    
+                                    <span class="icon"><ion-icon name="home-outline"></ion-icon>
+                                    </span>
+    
+                                    <span class="title">ICEA</span>
+                                </a>
+                    </li>
+                    <li class="list-options">
+    
+                        <a href="#">
+                            <span class="icon"><ion-icon name="umbrella-outline"></ion-icon></span>
+                            <span class="title">CIC</span>
+                        </a>
+                    </li>
+                    <li class="list-options">
+    
+                        <a href="#">
+                            <span class="icon"><ion-icon name="earth-outline"></ion-icon></span>
+                            <span class="title">Jubilee</span>
+                        </a>
+            </li>
+    
+                </ul>
+            </div>
+        </div>
+    <div class="toggle"></div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    //add active class in selected list item
+    let list =document.querySelectorAll('.list')
+    for(let i=0; i<list.length;i++){
+          list[i].onclick=function(){
+             // let j=0;
+             // while(j<list.length)
+             // {list[j++].className='list';}
+         list [i].className='list active'; }
+    }
+
+</script>
+    </body>
+</html>
