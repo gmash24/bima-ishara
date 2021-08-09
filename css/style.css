@@ -245,6 +245,12 @@ button {
      height: 100%;
 }
 
+footer.footer.icon span ion-icon{
+     font-size: 40px;
+     background-color: #fff;
+ }
+
+
 .loader {
      height: 100%;
      width: 100%;
@@ -649,12 +655,14 @@ footer .col-md-4 i {
      margin-right: 20px;
      
  }
+ footer li{
+      font-size: medium;
+      color: #fff;
 
-
-footer.i {
-
-     font-size: 25px;
-     background-color: white;
+ }
+ footer span{
+     font-size: medium;
+     color: #fff;
  }
 
 /** end footer **/
