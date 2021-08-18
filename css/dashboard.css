@@ -123,6 +123,23 @@ body{
     align-items: center;
 
 }
+topbar1{
+  background: #e1dcf5fd;
+  height: 60px;
+  display: flex;
+  width: 100%;
+  padding: 0 10px;
+  justify-content: 200px;
+
+  
+  align-items: center;
+
+}
+.topbar1 a{
+justify-content: center;
+  text-decoration-style: none;
+  color: blue;
+}
 .toggle{
 position: relative;
 width: 60px;
@@ -179,6 +196,7 @@ cursor: pointer;
 
 }
 .user ion-icon{
+  color: blue;
     position: absolute;
     top: 0;
     left: 0;
@@ -217,7 +235,7 @@ cursor: pointer;
     margin: 10px;
     align-content: center;
     word-wrap: break-word;
-    background-color: rgb(17, 219, 51);
+    background-color: rgb(249, 252, 250);
     background-clip: border-box;
     border: 1px solid #e7eaed;
     border-radius: 16px;
@@ -232,12 +250,13 @@ cursor: pointer;
   }
   .topup button{
     margin-top: 220px;
+    margin-left: 60px;
     border-radius: 16px;
     width: 150px;
     padding: 10px;
    
     font-size: medium;
-    padding: 10px;
+
     color: #fff;
     background-color: blue;
 
@@ -247,10 +266,10 @@ cursor: pointer;
     display: flex;
     float: left;
     flex-direction: column;
-    width: 600px;
+    width: 750px;
     height: 300px;
     margin: 10px;
-    background-color: rgb(182, 219, 17);
+    background-color:#fff;
     background-clip: border-box;
     border: 1px solid #e7eaed;
     border-radius: 16px;
@@ -258,8 +277,8 @@ cursor: pointer;
   }
   .graphdetails{
     margin: 10px;
-    height: 220px;
-    width: 520px;
+    height: 300px;
+    width: 700px;
     
     background-color: rgb(238, 230, 230);
     border-radius: 16px;
@@ -268,9 +287,10 @@ cursor: pointer;
   .table{
     width: 90%;
     height: 400px;
-    background-color: darkblue;
+    background-color: #fff;
     margin: 10px;
     border-radius: 16px;
+  
   
     display: inline-block;
   }
@@ -283,6 +303,23 @@ cursor: pointer;
     border-radius: 16px;
 
   }
+  table{
+    margin: 20px;
+    border-spacing: 10px; 
+    
+  }
+  td, th {
+    margin-left: 20px;
+    border: 1px solid #dddddd;
+    text-align: left;
+    
+    padding: 15px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
   .card-title {
     margin-bottom: 0.75rem;
   }

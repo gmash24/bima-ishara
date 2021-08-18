@@ -39,8 +39,15 @@
             </div>
         
         <div class="main">
+            <div class="topbar1">
+                <a href="wallet">My dashboard</a>
+                <a href="wallet">My wallet</a>
+                <a href="wallet">My packages</a>
+                <a href="wallet">My transactions</a>
+                <a href="wallet">Support</a>
+            </div>
             <div class="topbar">
-               
+                
          <div class="dashboard">My Dashboard</div>
                     <div class="search">
                       Wednesday 27 june 2021
@@ -60,6 +67,7 @@
 							<div class="card">
 								<div class="card-body"> 
                                     <div class="topup">
+                                        <img src="" alt="">
                                         <Button>topup</Button>
                                     </div>
 								</div>
@@ -68,6 +76,7 @@
                           <div class="col-lg-6">
 							<div class="bargraph">
                                 <div class="graphdetails"> 
+                                    <canvas id="myChart" style="width:100%;max-width:500px"></canvas>
 								</div>
 								
 							</div>
@@ -76,7 +85,53 @@
 <div class="row">
     <div class="col-lg-6">
         <div class="table">
-            <div class="tabledetails">   
+            <div class="tabledetails">
+                    <div class="dashboard">Transaction Details </div>
+                <table>
+                    <tr>
+                    <th>transaction id</th>
+                    <th>Date/time</th>
+                
+                    <th>User id</th>
+                    <th>wallet id</th>
+                    <th>token type</th>
+                    <th>amount</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                      </tr>
+                </table>
+                
+        
 									
             </div>
             
@@ -88,28 +143,15 @@
     </div>
 
 </div>
-
-
-
-                 
-
-
-
-
-            
-
-               
-                            
-                
-
-
         </div>
 
 
     </body>
-
-
- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<!--javascript for the chart-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+ 
+    <!--javascript for the icons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <script>
@@ -157,5 +199,32 @@
     }
 
 </script>
+<script>
+    var xValues = ["Outpatient", "In patient", "Dental", "Optical", "Marternity", "Eyecare", "Chronic"];
+    var yValues = [55, 49, 44, 24, 15,89,45,66];
+    var barColors = "blue";
+    
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: true},
+        title: {
+          display: true,
+          text: "Allocations and Usage"
+        }
+        
+      }
+    });
+    </script>
+
+
+
     </body>
 </html>
