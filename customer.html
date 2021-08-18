@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta name="viewport" context="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet"  href="css/dashboard.css  ">
+        <link rel="stylesheet"  href="css/customer.css  ">
         <title>
             Menu Display
         </title>
@@ -16,21 +16,21 @@
                                     <span class="icon"><ion-icon name="home-outline"></ion-icon>
                                     </span>
     
-                                    <span class="title">ICEA</span>
+                                    <span class="title">All</span>
                                 </a>
                     </li>
                     <li class="list">
     
                         <a href="#">
                             <span class="icon"><ion-icon name="umbrella-outline"></ion-icon></span>
-                            <span class="title">CIC</span>
+                            <span class="title">Mpesa</span>
                         </a>
                     </li>
                     <li class="list">
     
                         <a href="#">
                             <span class="icon"><ion-icon name="earth-outline"></ion-icon></span>
-                            <span class="title">Jubilee</span>
+                            <span class="title">DTB Bank</span>
                         </a>
             </li>
     
@@ -48,7 +48,7 @@
             </div>
             <div class="topbar">
                 
-         <div class="dashboard">My Dashboard</div>
+         <div class="dashboard">My Health plan</div>
                     <div class="search">
                       Wednesday 27 june 2021
                     </div>
@@ -74,11 +74,22 @@
 							</div>
                           </div>  
                           <div class="col-lg-6">
-							<div class="bargraph">
-                                <div class="graphdetails"> 
-                                    <canvas id="myChart" style="width:100%;max-width:500px"></canvas>
+							<div class="card1">
+                                
+								<div class="card-body1"> 
 								</div>
-								
+							</div>
+                            <div class="card1">
+								<div class="card-body1"> 
+								</div>
+							</div>
+                            <div class="card1">
+								<div class="card-body1"> 
+								</div>
+							</div>
+                            <div class="card1">
+								<div class="card-body1"> 
+								</div>
 							</div>
 						</div>
 					</div>
@@ -174,12 +185,10 @@
 
 <!-- endinject -->
 <!-- plugin js for this page -->
-<!-- End plugin js for this page -->
-<script src="vendors/chart.js/Chart.min.js"></script>
 <script src="vendors/progressbar.js/progressbar.min.js"></script>
     <script src="vendors/chartjs-plugin-datalabels/chartjs-plugin-datalabels.js"></script>
     <script src="vendors/justgage/raphael-2.1.4.min.js"></script>
-    <script src="/js/dashboard.js"></script>
+    <script src="/js/custom.js"></script>
 <!-- Custom js for this page-->
 <script src="js/dashboard.js"></script>
 <!-- End custom js for this page-->
@@ -199,31 +208,6 @@
     }
 
 </script>
-<script>
-    var xValues = ["Outpatient", "In patient", "Dental", "Optical", "Marternity", "Eyecare", "Chronic"];
-    var yValues = [55, 49, 44, 24, 15,89,45,66];
-    var barColors = "blue";
-    
-    new Chart("myChart", {
-      type: "bar",
-      data: {
-        labels: xValues,
-        datasets: [{
-          backgroundColor: barColors,
-          data: yValues
-        }]
-      },
-      options: {
-        legend: {display: false},
-        title: {
-          display: true,
-          text: "Allocations and Usage"
-        }
-        
-      }
-    });
-    </script>
-
 
 
     </body>

@@ -212,7 +212,7 @@ cursor: pointer;
   font-size: medium;
   margin: 20px;
   color: #fff;
-  background-color: blue;
+  background-color:rgb(10, 201, 10);
 }
 .healthplan button ion-icon{
   background-color: #ffffff;
@@ -220,8 +220,6 @@ cursor: pointer;
   color: black;
   
 }
-
-
 
 
 
@@ -240,6 +238,22 @@ cursor: pointer;
     border: 1px solid #e7eaed;
     border-radius: 16px;
   }
+  .card1{
+    position: relative;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    width: 300px;
+    height: 140px;
+    margin: 10px;
+    align-content: center;
+    word-wrap: break-word;
+    background-color: rgb(249, 252, 250);
+    background-clip: border-box;
+    border: 1px solid #e7eaed;
+    border-radius: 16px;
+
+  }
   .card-body {
    margin: 10px;
     height: 280px;
@@ -248,6 +262,14 @@ cursor: pointer;
     background-color: rgb(246, 242, 242);
     border-radius: 16px;
   }
+  .card-body1{
+    margin: 10px;
+     height: 120px;
+     width: 250px;
+     box-sizing: border-box;
+     background-color: rgb(246, 242, 242);
+     border-radius: 16px;
+   }
   .topup button{
     margin-top: 220px;
     margin-left: 60px;
@@ -258,7 +280,7 @@ cursor: pointer;
     font-size: medium;
 
     color: #fff;
-    background-color: blue;
+    background-color: rgb(10, 201, 10);
 
   }
   .bargraph{
