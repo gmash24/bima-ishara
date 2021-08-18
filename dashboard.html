@@ -7,7 +7,6 @@
         </title>
     </head>
     <body>
-        <div class="container">
             <div class="navbar">
                 <ul>
                     <li class="list active">
@@ -36,17 +35,119 @@
             </li>
     
                 </ul>
+                
+            </div>
+        
+        <div class="main">
+            <div class="topbar">
+               
+         <div class="dashboard">My Dashboard</div>
+                    <div class="search">
+                      Wednesday 27 june 2021
+                    </div>
+                    
+                    <div class="healthplan">
+                        <button>
+                            <ion-icon name="add"></ion-icon>
+                            Add Health plan</button>
+                    </div>
+                        <div class="user">
+                            <ion-icon name="menu"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="row">
+						<div class="col-lg-6 ">
+							<div class="card">
+								<div class="card-body"> 
+                                    <div class="topup">
+                                        <Button>topup</Button>
+                                    </div>
+								</div>
+							</div>
+                          </div>  
+                          <div class="col-lg-6">
+							<div class="bargraph">
+                                <div class="graphdetails"> 
+								</div>
+								
+							</div>
+						</div>
+					</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="table">
+            <div class="tabledetails">   
+									
+            </div>
+            
+
+               
+                
             </div>
         </div>
-    <div class="toggle"></div>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    </div>
+
+</div>
+
+
+
+                 
+
+
+
+
+            
+
+               
+                            
+                
+
+
+        </div>
+
+
+    </body>
+
+
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    function toggleMenu(){
+       let toggle = document.querySelector('.toggle');
+       let navigation = document.querySelector('.navbar');
+       let main = document.querySelector('.main');
+       toggle.classList.toggle('active')
+       navigation.classList.toggle('active');
+       main.classList.toggle('active');
+
+    }
+</script>
+
+<script src="vendors/base/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page-->
+<!-- End plugin js for this page-->
+<!-- inject:js -->
+
+<!-- endinject -->
+<!-- plugin js for this page -->
+<!-- End plugin js for this page -->
+<script src="vendors/chart.js/Chart.min.js"></script>
+<script src="vendors/progressbar.js/progressbar.min.js"></script>
+    <script src="vendors/chartjs-plugin-datalabels/chartjs-plugin-datalabels.js"></script>
+    <script src="vendors/justgage/raphael-2.1.4.min.js"></script>
+    <script src="/js/dashboard.js"></script>
+<!-- Custom js for this page-->
+<script src="js/dashboard.js"></script>
+<!-- End custom js for this page-->
+
 <script>
     //add active class in selected list item
     let list =document.querySelectorAll('.list');
-    for(let i=0;i<list.length; i++){
+    for(let i=0;i<list.length; i++){ 
           list[i].onclick= function(){
-              Let j=0;
+              let j=0;
               while(j<list.length)
               {
                   list[j++].className='list';
