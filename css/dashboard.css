@@ -239,6 +239,7 @@ cursor: pointer;
     background-clip: border-box;
     border: 1px solid #e7eaed;
     border-radius: 16px;
+    box-shadow: 0 30px 60px rgba(0,0,0,.2);
   }
   .card-body {
    margin: 10px;
@@ -266,31 +267,34 @@ cursor: pointer;
     display: flex;
     float: left;
     flex-direction: column;
-    width: 750px;
-    height: 300px;
+    width: 750px !important;
+    height: 300px !important;
     margin: 10px;
     background-color:#fff;
     background-clip: border-box;
     border: 1px solid #e7eaed;
     border-radius: 16px;
+    justify-content: center;
+    align-items: center;
 
   }
   .graphdetails{
     margin: 10px;
     height: 300px;
     width: 700px;
-    
+    box-shadow: 0 30px 60px rgba(0,0,0,.2);
     background-color: rgb(238, 230, 230);
     border-radius: 16px;
 
   }
   .table{
-    width: 90%;
+    width: 100%;
     height: 400px;
     background-color: #fff;
     margin: 10px;
     border-radius: 16px;
-  
+    justify-content: center;
+    align-items: center;
   
     display: inline-block;
   }
@@ -301,6 +305,8 @@ cursor: pointer;
     margin: 10px;
     display: inline-block;
     border-radius: 16px;
+    justify-content: center;
+    align-items: center;
 
   }
   table{
@@ -319,6 +325,23 @@ cursor: pointer;
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+  .btn {
+
+    border-radius: 12px;
+
+width: 229px;
+background-color: #1700CC;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px 2px;
+  cursor: pointer;
+
+  }
   
   .card-title {
     margin-bottom: 0.75rem;
@@ -332,117 +355,5 @@ cursor: pointer;
   }
   .d-md-flex {
     display: flex !important;
-  }
-  .support-tracker-legend ul {
-    padding-left: 0;
-    display: flex;
-  }
-  
-  .support-tracker-legend ul li {
-    margin-right: 3rem;
-    list-style: none;
-  }
-  
-  .support-tracker-legend ul li .legend-box {
-    width: 13px;
-    height: 13px;
-    border-radius: 100%;
-    background: #ff0000;
-    display: inline-block;
-    margin-right: 10px;
-  }
-  .product-order-wrap {
-    padding: 0 2rem;
-  }
-  
-  .product-order-wrap .product-order {
-    text-align: center;
-    position: absolute;
-    bottom: 4.2rem;
-    width: 265px;
-    height: 170px;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-  @media (max-width: 1024px) {
-    .product-order-wrap .product-order {
-      width: auto;
-      height: 84px;
-    }
-  }
-  
-  @media (max-width: 991px) {
-    .product-order-wrap .product-order {
-      width: auto;
-      height: 12px;
-    }
-  }
-  
-  .product-order-wrap .product-order .icon-inside-circle {
-    width: 83px;
-    height: 83px;
-    background: #f38989;
-    border-radius: 100%;
-    text-align: center;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  
-  @media (max-width: 1024px) {
-    .product-order-wrap .product-order .icon-inside-circle {
-      width: 48px;
-      height: 48px;
-    }
-  }
-  
-  @media (max-width: 991px) {
-    .product-order-wrap .product-order .icon-inside-circle {
-      width: 24px;
-      height: 24px;
-    }
-  }
-  
-  .product-order-wrap .product-order .icon-inside-circle i {
-    font-size: 2.25rem;
-  }
-  
-  @media (max-width: 991px) {
-    .product-order-wrap .product-order .icon-inside-circle i {
-      font-size: 0.875rem;
-    }
-  }
-  
-  @media (max-width: 1024px) {
-    .product-order-wrap .product-order .icon-inside-circle i {
-      font-size: 1rem;
-    }
-  }
-  
-  .product-order-wrap .productorder-gage {
-    margin-top: -100px;
-    position: relative;
-  }
-  
-  @media (max-width: 991px) {
-    .product-order-wrap .productorder-gage {
-      margin-top: -20px;
-    }
-  }
-  .stretch-card {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: stretch;
-    align-items: stretch;
-    -webkit-justify-content: stretch;
-    justify-content: stretch;
-  }
-  
-  .stretch-card > .card {
-    width: 100%;
-    min-width: 100%;
   }
   
