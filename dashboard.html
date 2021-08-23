@@ -67,8 +67,9 @@
 								</div>
 							</div>
                           </div>  
-                          <div class="col-lg-6">
+                          <div id="NHIF" class="col-lg-6">
 							<div class="bargraph">
+                                 
                                 <div class="graphdetails"> 
                                     <canvas id="myChart" style="width:100%;max-width:500px"></canvas>
 								</div>
@@ -153,75 +154,35 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <script>
-    function toggleMenu(){
-       let toggle = document.querySelector('.toggle');
-       let navigation = document.querySelector('.navbar');
-       let main = document.querySelector('.main');
-       toggle.classList.toggle('active')
-       navigation.classList.toggle('active');
-       main.classList.toggle('active');
-
-    }
-</script>
-
-<script src="vendors/base/vendor.bundle.base.js"></script>
-<!-- endinject -->
-<!-- Plugin js for this page-->
-<!-- End plugin js for this page-->
-<!-- inject:js -->
-
-<!-- endinject -->
-<!-- plugin js for this page -->
-<!-- End plugin js for this page -->
-<script src="vendors/chart.js/Chart.min.js"></script>
-<script src="vendors/progressbar.js/progressbar.min.js"></script>
-    <script src="vendors/chartjs-plugin-datalabels/chartjs-plugin-datalabels.js"></script>
-    <script src="vendors/justgage/raphael-2.1.4.min.js"></script>
-    <script src="/js/dashboard.js"></script>
+  </script>
+  
 <!-- Custom js for this page-->
 <script src="js/dashboard.js"></script>
 <!-- End custom js for this page-->
 
+
 <script>
-    //add active class in selected list item
-    let list =document.querySelectorAll('.list');
-    for(let i=0;i<list.length; i++){ 
-          list[i].onclick= function(){
-              let j=0;
-              while(j<list.length)
-              {
-                  list[j++].className='list';
-                }
-
-         list[i].className = 'list active'; }
-    }
-
+    document.getElementById("NHIF")
+    var i = 1;
+$( "#NHIF" ).click(function() {
+	  var container = document.getElementById("myContainerDiv");
+    var html = document.getElementById('myContainerDiv').innerHTML;
+    html = html + "<div class=\"col-sm-12\">"
+  	+ "<div class=\"form-group\">"
+    + "<div class=\"col-sm-6\"><label>Name</label><input class=\"form-control\" type=\"text\" name=\"display_name[]\"></div>"
+    + "<div class=\"col-sm-2\"><label>Part</label><input class=\"form-control\" type=\"text\" name=\"part[]\" value=" + i + "></div>"
+    + "<div class=\"col-sm-2\"><label>Pages between</label><input class=\"form-control\" type=\"text\" name=\"pages[]\"></div>"
+    + "<div class=\"col-sm-2\"><label>price</label><input class=\"form-control\" type=\"text\" name=\"price[]\"></div>"
+    + "</div>"
+    + "</div>";
+    container.innerHTML= html;
+    i++;
+   return false;
+});
 </script>
 <script>
-    var xValues = ["Outpatient", "In patient", "Dental", "Optical", "Marternity", "Eyecare", "Chronic"];
-    var yValues = [55, 49, 44, 24, 15,89,45,66];
-    var barColors = "blue";
-    
-    new Chart("myChart", {
-      type: "bar",
-      data: {
-        labels: xValues,
-        datasets: [{
-          backgroundColor: barColors,
-          data: yValues
-        }]
-      },
-      options: {
-        legend: {display: false},
-        title: {
-          display: true,
-          text: "Allocations and Usage"
-        }
-        
-      }
-    });
-    </script>
-
+    document.getElementById("bargraph").onclick=newList;
+</script>
 
 
     </body>
