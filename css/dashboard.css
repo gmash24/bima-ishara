@@ -4,19 +4,19 @@ body{
     min-width: 100vh;
     overflow: hidden;
     display: flex;
+    margin: 0px;
     background: #fff;
 }
 .navbar{
 
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    position: relative;
+   
     bottom: 20px;
-    background: rgb(237, 237, 241);
-    width: 200px; 
+    background: #0a6bda;
+    width: 250px; 
     box-sizing: initial;
     border-radius: 10px;
-    border-left: 5px solid rgb(228, 25, 25);
+    border-right: 20px;
     transition: 0.5s;
     display: flex;
     overflow: hidden;
@@ -89,20 +89,18 @@ body{
     position:fixed;
 }
 .dashboard{
-  font-size: 16px;
+  
   color: blue;
   width: 300px;
-  
   align-content: flex-start;
 }
 .main{
   flex: 1;
     position: fixed; 
-    top: 20px;
     width:90%;
     left: 200px;
     min-height: 100vh;
-    background: #e1dcf5fd;
+    background: #fff;
     transition: 0.5s;
     overflow: auto;
      
@@ -119,7 +117,6 @@ body{
     width: 100%;
     padding: 0 10px;
     justify-content: 200px;
-    
     align-items: center;
 
 }
@@ -144,7 +141,7 @@ justify-content: center;
 position: relative;
 width: 60px;
  height: 60px;
- background: blanchedalmond;
+ background: #e1dcf5fd;
 cursor: pointer;
 }
 .toggle ::before{
@@ -266,8 +263,9 @@ cursor: pointer;
     position: relative;
     display: flex;
     float: left;
+    margin-left: 20px;
     flex-direction: column;
-    width: 750px !important;
+    width: 650px !important;
     height: 300px !important;
     margin: 10px;
     background-color:#fff;
@@ -276,13 +274,13 @@ cursor: pointer;
     border-radius: 16px;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 30px 60px rgba(0,0,0,.2);
 
   }
   .graphdetails{
     margin: 10px;
     height: 300px;
-    width: 700px;
-    box-shadow: 0 30px 60px rgba(0,0,0,.2);
+    width: 600px;
     background-color: rgb(238, 230, 230);
     border-radius: 16px;
 
