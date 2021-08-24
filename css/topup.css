@@ -95,20 +95,90 @@ body{
   align-content: flex-start;
 }
 .main{
-  flex: 1;
-    position: fixed; 
-    width:90%;
-    left: 200px;
+
+    position: relative; 
+    width:100%;
     min-height: 100vh;
     background: #fff;
     transition: 0.5s;
     overflow: auto;
+    display: block;
      
 }
 .main.active{
     width:calc(100%-200px) ;
     left: 90px;
 }
+
+.main .searchcontainer
+
+
+{       margin-top: 20px;
+      border-radius: 16px;
+    margin-left: 20px;
+    width: 300px;;
+    height: 900px;
+    display: flex;
+    background-color: rgba(201, 184, 184, 0.267);
+    float: left;
+    position: relative;
+   
+    }
+    
+    .main .info{
+
+        margin-top: 20px;
+        border-radius: 16px;
+    margin-left: 20px;
+    
+    height: 900px;
+    display: flex;
+    background-color: rgba(201, 184, 184, 0.267);
+    float: left;
+    flex-grow: 1;
+    position: relative;
+    overflow: auto;
+    
+    
+    }
+    .searchbox {
+        margin-top: 20px;
+        display: flex;
+        height: 50px;
+        margin-right: 20px;
+        flex-direction: row-reverse;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;
+    }
+    
+    .searchbox input {
+        /* Take available width */
+        width: 200px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .searchcardcontainer {
+        position: absolute;
+        /* Put a card in the next row when previous cards take all width */
+        flex-wrap: wrap;
+        margin-top: 20px;
+        display: flex;
+       
+    }
+ .cards_item{
+    
+        /* There will be 4 cards per row */
+     flex-basis: 25%;
+     padding-left: 8px;
+     padding-right: 8px;
+    
+    }
+.searchcard{
+    width: 100px;
+    margin-top: 20px;
+    background-color: #1700CC;
+    height: 100px;}
 .topbar{
 
     background: #e1dcf5fd;
@@ -120,23 +190,8 @@ body{
     align-items: center;
 
 }
-topbar1{
-  background: #e1dcf5fd;
-  height: 60px;
-  display: flex;
-  width: 100%;
-  padding: 0 10px;
-  justify-content: 200px;
 
-  
-  align-items: center;
 
-}
-.topbar1 a{
-justify-content: center;
-  text-decoration-style: none;
-  color: blue;
-}
 .toggle{
 position: relative;
 width: 60px;
@@ -159,6 +214,8 @@ cursor: pointer;
     position: relative;
     width: 400px;
     margin: 0 40px;
+    display: flex;
+    box-sizing: border-box;
 }
 .search label{
     position: relative;
@@ -217,11 +274,6 @@ cursor: pointer;
   color: black;
   
 }
-
-
-
-
-
 .card {
     position: relative;
     display: flex;
@@ -239,21 +291,23 @@ cursor: pointer;
     box-shadow: 0 30px 60px rgba(0,0,0,.2);
   }
   .card-body {
-   margin: 10px;
+    margin: 10px;
     height: 280px;
     width: 280px;
+    justify-items: center;
     box-sizing: border-box;
     background-color: rgb(246, 242, 242);
     border-radius: 16px;
   }
   .card-body .topup{
     height: 200px;
-    width: 260px;
-    background-color: black;
+    width: 200px;
+    background-color: rgb(224, 31, 31);
     position: absolute;
     z-index: 6;
+    justify-self: center;
+
     
-    margin: 0 -40px 0 -40px;
    border-radius: 100%;
    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
   }
@@ -283,8 +337,8 @@ cursor: pointer;
     float: left;
     margin-left: 20px;
     flex-direction: column;
-    width: 650px !important;
-    height: 300px !important;
+    width: 400px ;
+    height: 300px ;
     margin: 10px;
     background-color:#fff;
     background-clip: border-box;
@@ -297,56 +351,19 @@ cursor: pointer;
   }
   .graphdetails{
     margin: 10px;
-    height: 300px;
-    width: 600px;
-    background-color: rgb(238, 230, 230);
+    height: 00px;
+    width: 400px;
+    background-color: rgb(231, 14, 14);
     border-radius: 16px;
 
   }
-  .table{
-    width: 100%;
-    height: 400px;
-    background-color: #fff;
-    margin: 10px;
-    border-radius: 16px;
-    justify-content: center;
-    align-items: center;
   
-    display: inline-block;
-  }
-  .tabledetails{
-    width: 90%;
-    height: 400px;
-    background-color: rgb(237, 237, 241);
-    margin: 10px;
-    display: inline-block;
-    border-radius: 16px;
-    justify-content: center;
-    align-items: center;
-
-  }
-  table{
-    margin: 20px;
-    border-spacing: 10px; 
-    
-  }
-  td, th {
-    margin-left: 20px;
-    border: 1px solid #dddddd;
-    text-align: left;
-    
-    padding: 15px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
   .btn {
 
     border-radius: 12px;
 
-width: 229px;
-background-color: #1700CC;
+    width: 229px;
+    background-color: #1700CC;
   border: none;
   color: white;
   padding: 10px;
@@ -363,13 +380,5 @@ background-color: #1700CC;
     margin-bottom: 0.75rem;
   }
   
-  .text-success {
-    color: #0ddbb9 !important;
-  }
-  .text-dark {
-    color: #001737 !important;
-  }
-  .d-md-flex {
-    display: flex !important;
-  }
+  
   

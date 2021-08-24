@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta name="viewport" context="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet"  href="css/dashboard.css  ">
+        <link rel="stylesheet"  href="css/topup.css  ">
         <title>
             Menu Display
         </title>
@@ -32,16 +32,16 @@
                             <span class="icon"><ion-icon name="earth-outline"></ion-icon></span>
                             <span class="title">Jubilee</span>
                         </a>
-            </li>
+                     </li>
     
                 </ul>
                 
             </div>
-        
+        <!--1st container-->
         <div class="main">
             
             <div class="topbar">
-         <div class="dashboard">My Dashboard</div>
+                 <div class="dashboard">My Dashboard</div>
                     <div class="search">
                       Wednesday 27 june 2021
                     </div>
@@ -56,99 +56,112 @@
                         </div>
                     </div>
 
-                    <div class="row">
-						<div class="col-lg-6 ">
-							<div class="card">
-								<div class="card-body"> 
-                                    <div class="topup">
-                                    
-                                        <div class="circle">
-                                            <div class="bar"></div>
-                                        </div>
-                                        <Button>topup</Button>
-                                    </div>
-								</div>
-							</div>
-                          </div>  
-                          <div id="NHIF" class="col-lg-6">
-							<div class="bargraph">
-                                 
-                                <div class="graphdetails"> 
-                                    <canvas id="myChart" style="width:100%;max-width:500px"></canvas>
-								</div>
-								
-							</div>
-						</div>
-					</div>
+                   
 
-        <div class="row">
-          <div class="col-lg-6">
-              <div class="table">
-            <div class="tabledetails">
-                    <div class="dashboard">Transaction Details </div>
-                <table>
-                    <tr>
-                        <th colspan="2">Transactions</th>
-                        <th colspan="2" style="text-align:center;">Today</th>
-                        <th colspan="1" style="text-align:left;">Wallet: All</th>
-                        <th>Token Type: All</th>
-                        <th colspan=""></th>
-                        <th colspan="3"><button type="button" class="btn">View All</button></th>
-                      
-                        <!-- <th>Particulars</th> -->
-                        <th></th>
-                      </tr>
+
+
+
+
+
+
+
+                    
+                    <!-- 2nd container-->
+                <div class="searchcontainer">
+                    <div class="searchbox">
+                        <!-- Text input -->
+                        <input type="text" class="container__input" />
+                    
+                        <!-- Search icon sticks to the left or right -->
+                        <ion-icon name="search"></ion-icon>
+
+
+                        </div>
+                    
+    
+                        <div class="searchcardcontainer">
+                            
+                        <div class="cards__item">.....
+                           
+                            <div class="searchcard"></div>
+                            <div class="searchcard"></div>
+                           <div class="searchcard"></div>
+                           <div class="searchcard"></div> <div class="searchcard"></div>
+                           <div class="searchcard"></div>
+                          <div class="searchcard"></div>
+                          <div class="searchcard"></div>
+                            
+                        </div>
+                        
+                    
+                       
+
+                        </div>
+                   
+                        
+                       
+                    </div>
+
+
+
+
+
                 
-                    <tr>
-                        <td>Jill</td>
-                        <td>Smith</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                      </tr>
-                      <tr>
-                        <td>Eve</td>
-                        <td>Jackson</td>
-                        <td>94</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                      </tr>
-                      <tr>
-                        <td>Jill</td>
-                        <td>Smith</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                      </tr>
-                      <tr>
-                        <td>Eve</td>
-                        <td>Jackson</td>
-                        <td>94</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                      </tr>
-                </table>
-                
-        
-									
-            </div>
+
             
+                      <!--3rd container-->
+                   <div class="info">
+                    <div class="row">
+                      <div class="col-lg-6 ">
+                         <div class="card">
+                        <div class="card-body"> 
+                         <div class="topup">
+                
+                            
+                    <Button>topup</Button>
+                </div>
+            </div>
+                 </div>
+      </div>  </div>
+      <div id="NHIF" class="col-lg-6">
+             <div class="bargraph">
+                <div class="graphdetails"> 
+                 <canvas id="myChart" style="width:300%;max-width:400px"></canvas>
+                </div>
+           </div>
+         </div>
+            </div>                
+        </div>
+        </div>
 
+             </div>
+
+
+
+                  
                
                 
-            </div>
-        </div>
-    </div>
+  
 
 </div>
-        </div>
+        
 
 
     </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--javascript for the chart-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
  
@@ -187,6 +200,6 @@ $( "#NHIF" ).click(function() {
     document.getElementById("bargraph").onclick=newList;
 </script>
 
-
+</div>
     </body>
 </html>
