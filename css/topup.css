@@ -5,24 +5,32 @@ body{
     overflow: auto;
     display: flex;
     margin: 0px;
-    background: #fff;
+    background: #e1dcf5fd;
 }
 .navbar{
 
     position: relative;
+   border-radius: 16px;
    
-    bottom: 20px;
-    background: #0a6bda;
+    background: #ffff;
     width: 250px; 
     box-sizing: initial;
-    border-radius: 10px;
+
     border-right: 20px;
     transition: 0.5s;
     display: flex;
-    overflow: hidden;
+    
     
 
 
+}
+.heading {
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    width: 80px;
+    margin-left: 40px;
+    align-items: center;
 }
 .navbar ul{
     position: absolute;
@@ -51,7 +59,7 @@ body{
     width: 100;
     display: flex;
     text-decoration: none;
-    color: #fff;
+    color: rgb(20, 17, 231);
 
 
 }
@@ -59,7 +67,7 @@ body{
     width: 100px;
 }
 .navbar ul li.active{
-    background: #fff;
+    background: #e1dcf5fd;
 
 }
 .navbar ul li a .icon{
@@ -103,9 +111,9 @@ body{
     position: relative; 
     width:100%;
     min-height: 100vh;
-    background: #fff;
+    background: #e1dcf5fd;
     transition: 0.5s;
-    overflow: auto;
+    
     display: inline-block;
      
 }
@@ -120,11 +128,12 @@ body{
 {    margin-top: 20px;
       border-radius: 16px;
     margin-left: 20px;
-    width: 300px;;
-    height: 100%;
+    width: 360px;;
+    height: 1200px;
     display: flex;
-    background-color: rgba(201, 184, 184, 0.267);
+    background-color: #ffff;
     position: relative;
+    
    
     }
     
@@ -154,21 +163,24 @@ body{
         margin-top: 20px;
         display: flex;
         height: 50px;
-        width: 260px;
+        width: 320px;
         margin-left: 20px;
-        flex-direction: row-reverse;
-        
         border-radius: 16px;
         border: 1px solid rgba(0, 0, 0, 0.3);
     }
     
     .searchbox input {
+        position: relative;
         /* Take available width */
+        margin-left: 5px;
         width: 260px;
         height: 40px;
         border-color:transparent ;
         border-radius: 16px;
         
+    }
+    .searchbox .search ion-icon{
+        scale: (2,0);
     }
 
    
@@ -178,9 +190,9 @@ body{
         align-items: center;
         position: absolute;
         margin-top: 100px;
-        margin-right: 50px;
+        margin-right: 80px;
         right: 0;
-        width: 200px;
+        width: 320px;
         display: flex;
         /* Size */
         height: 32px;
@@ -189,10 +201,11 @@ body{
     
     .slidercontainer__left {
         height: 5px;
-        width: 100px;
+        width: 120px;
+        margin-left: 60px;
     
         /* Colors */
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(24, 38, 228, 0.932);
     }
     
     .slidercontainer__circle {
@@ -204,19 +217,39 @@ body{
         border-radius: 9999px;
     
         /* Colors */
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(24, 38, 228, 0.932);
     }
     
     .slidercontainer__right {
         /* Take the remaining width */
-    width: 86px;
+         width: 86px;
         height: 5px;
     
         /* Colors */
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(24, 38, 228, 0.932);
     }
-
-
+    .filter{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 280px;
+        border-radius: 16px;
+        background-color: rgba(24, 38, 228, 0.932);
+    }
+    .filter button{
+        border-radius: 10px;
+        height: 40px;
+        width: 40px;
+    }
+   
+    .showresults{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 20px;
+    font-weight: bold;
+    
+     }
 
 
 
@@ -225,15 +258,16 @@ body{
      .searchcardcontainer {
         
         position: absolute;
-         background-color: #ffffff;
+         background-color: rgb(216, 229, 230);
         /* Put a card in the next row when previous cards take all width */
         flex-wrap: wrap;
-        margin-top: 160px;
+        margin-top: 170px;
         display: flex;
-        width: 270px;
+        width: 320px;
+        height: auto;
         border-radius: 16px;
         margin-left: 20px;
-        overflow-y: auto;
+        
 
         
        
@@ -246,38 +280,33 @@ body{
      padding-right: 8px;
      margin-top: 20px;
      display: flex;
-    
+     height: auto;
+     overflow:scroll !important;
+     background-color: rgb(246, 242, 242);
     }
 .searchcard{
     float: left;
     width: 120px;
     margin-top: 10px;
     border-radius: 16px;
-    margin-left: 10px;
-    background-color: #1700CC;
-    overflow-y: auto;
+    margin-left: 30px;
+    
+    
     height: 150px;}
+.searchcard img{
 
-
-
-
-
-
-
-
+    height: 150px;
+    width: 120px;
+}
+.searchprice{
+    position:absolute;
+    font-size: small;
+    margin-top: 80px;
+    margin-left: 20px;
+}
 
     /*----topbar css*/
-.topbar{
 
-    background: #e1dcf5fd;
-    height: 60px;
-    display: flex;
-    width: 100%;
-    padding: 0 10px;
-    justify-content: 200px;
-    align-items: center;
-
-}
 
 
 .toggle{
