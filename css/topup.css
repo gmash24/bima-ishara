@@ -2,7 +2,7 @@
 body{
     min-height: 100vh;
     min-width: 100vh;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     margin: 0px;
     background: #fff;
@@ -94,6 +94,10 @@ body{
   width: 300px;
   align-content: flex-start;
 }
+
+
+
+
 .main{
 
     position: relative; 
@@ -102,7 +106,7 @@ body{
     background: #fff;
     transition: 0.5s;
     overflow: auto;
-    display: block;
+    display: inline-block;
      
 }
 .main.active{
@@ -120,7 +124,6 @@ body{
     height: 100%;
     display: flex;
     background-color: rgba(201, 184, 184, 0.267);
-    float: left;
     position: relative;
    
     }
@@ -130,14 +133,14 @@ body{
         margin-top: 20px;
         border-radius: 16px;
     margin-left: 20px;
-    
-    height: 900px;
+    width: auto;
+    height: auto;
     display: flex;
     background-color: rgba(201, 184, 184, 0.267);
-    float: left;
-    flex-grow: 1;
-    position: relative;
-    overflow: auto;
+    flex-direction: column;
+    
+    position: absolute;
+    
     
     
     }
