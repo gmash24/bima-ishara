@@ -2,6 +2,7 @@
     <head>
         <meta name="viewport" context="width=device-width,initial-scale=1.0">
         <link rel="stylesheet"  href="css/topup.css  ">
+        
         <title>
             Menu Display
         </title>
@@ -42,6 +43,10 @@
         <!--1st container-->
         <div class="main">
                     
+
+
+
+            
                     <!-- 2nd container-->
                 <div class="searchcontainer">
                     <!--search box-->
@@ -77,74 +82,92 @@
                             
                         <div class="cards__item">
                             
-                           
-                            <div class="searchcard">
-                                <img src="/images/family.png">
-                            </div>
-                            <div class="searchcard"> <img src="/images/family1.png"></div>
-                           <div class="searchcard"> <img src="/images/bruce-mars-S8ffHr_dxHo-unsplash.png"></div>
-                           <div class="searchcard"> <img src="/images/personal.png"></div>
-                            <div class="searchcard"> <img src="/images/property.png"></div>
-                            <div class="searchcard"> <img src="/images/personal.png"></div>
-                            
-                           
+                           <!-- clickble cards in the form of buttons-->
+                            <div class="searchcard"><button class="tablinks" 
+                                onclick="openCity(event, 'London')" id="defaultOpen">
+                                 <img src="/images/family.png"></button> </div>
+
+                            <div class="searchcard"> <button class="tablinks"
+                                onclick="openCity(event, 'paris')" id="defaultOpen" >
+                                 <img src="/images/family1.png"> </button> </div>
+
+                           <div class="searchcard"> <button class="tablinks"
+                            onclick="openCity(event, 'London')" id="defaultOpen">
+                               <img src="/images/bruce-mars-S8ffHr_dxHo-unsplash.png"></button></div>
+
+                           <div class="searchcard"> <button class="tablinks"
+                            onclick="openCity(event, 'tokyo')" id="defaultOpen"
+                            > <img src="/images/personal.png"></button></div>
+
+                            <div class="searchcard"><button class="tablinks"
+                                onclick="openCity(event, 'nairobi')" id="defaultOpen"
+                                ><img src="/images/property.png"></button></div>
+                            <div class="searchcard"> <button class="tablinks"
+                                onclick="openCity(event, 'usa')" id="defaultOpen"
+                            ><img src="/images/personal.png"></button></div>
 
 
 
-                          
-                            
+
+
+                            <!--what to display on clicking-->
+                            <div id="London" class="tabcontent">
+                                <h3>London</h3>
+                                <p>London is the capital city of England.</p>
+                              </div>
+                              
+                              <div id="paris" class="tabcontent">
+                                <h3>Paris</h3>
+                                <p>Paris is the capital of France.</p>
+                              </div>
+                              
+                              <div id="tokyo" class="tabcontent">
+                                <h3>Tokyo</h3>
+                                <p>Tokyo is the capital of Japan.</p>
+                              </div>
                         </div>
-                        
-        
 
                         </div>
-                   
-                        
-                       
                     </div>
 
 
 
 
 
-                
 
-            
                       <!--3rd container-->
                    <div class="info">
-                    <div class="row">
-                      <div class="col-sm-6 ">
-                         <div class="card">
-                        <div class="card-body"> 
-                         <div class="topup">
-                
-                            
-                    <Button>topup</Button>
-                </div>
-            </div>
-                 </div>
-      </div>  </div>
-      <div id="NHIF" class="col-lg-6">
-             <div class="bargraph">
-                <div class="graphdetails"> 
-                 <canvas id="myChart" style="width:300%;max-width:400px"></canvas>
-                </div>
-           </div>
-         </div>
-            </div>                
+                       <div class="arrow"></div>
+                       <div class="infocontent">
+                        <div class="row">
+                            <div class="col-sm-6 ">
+                               <div class="card">
+                              <div class="card-body"> 
+                               <div class="topup">
+                                <Button>topup</Button>
+                               </div>
+        
+                             </div>
+                            </div>
+                             </div>
+      
+                          </div>
+                           </div>
+                           <!--graph-->
+                           <div id="NHIF" class="col-lg-6">
+                            <div class="bargraph">
+                               <div class="graphdetails"> 
+                                <!-- <canvas id="myChart" style="width:300%;max-width:200px"></canvas> -->
+                               </div>
+                          </div>
+                        </div>
+                       </div>
+                   
+                         </div>   
+
         </div>
-        </div>
-
-             </div>
-
-
-
-                  
-               
-                
-  
-
-</div>
+    </div>
+        <!--end of main-->
         
 
 
@@ -174,8 +197,8 @@
   </script>
   
 <!-- Custom js for this page-->
-<script src="js/dashboard.js"></script>
-<!-- End custom js for this page-->
+<script src="js/topup.js"></script>
+
 
 
 <script>

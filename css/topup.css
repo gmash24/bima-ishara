@@ -134,12 +134,32 @@ body{
     display: flex;
     background-color: #ffff;
     position: relative;
-    
-    
-    
+     }
+     .infocontent{
+        left:  25px;
+        width: 700px;
+        height: 90vh;
+        display: flex;
+        margin-top: 10px;
+        background-color: #ffff;
+        position: absolute;
+        border-radius: 16px;
+        border: solid rgba(0, 0, 0, 0.3);
+
+     }
+
+     .info .arrow {
+        /* Size */
+        height: 25px;
+        width: 25px;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+        background-color: #FFF;
+        position: absolute;
+
     }
-
-
 
 
 /*search box css*/
@@ -250,7 +270,8 @@ body{
         margin-top: 170px;
         display: flex;
         width: 320px;
-        height: auto;
+        height: fit-content;
+
         border-radius: 16px;
         margin-left: 20px;
     }
@@ -378,8 +399,8 @@ cursor: pointer;
     display: flex;
     float: left;
     flex-direction: column;
-    width: 300px;
-    height: 300px;
+    width: 220px;
+    height: 220px;
     margin: 10px;
     align-content: center;
     word-wrap: break-word;
@@ -391,8 +412,8 @@ cursor: pointer;
   }
   .card-body {
     margin: 10px;
-    height: 280px;
-    width: 280px;
+    height: 180px;
+    width: 180px;
     justify-items: center;
     box-sizing: border-box;
     background-color: rgb(246, 242, 242);
@@ -418,11 +439,11 @@ cursor: pointer;
  
 
 }  .topup button{
-    margin-top: 220px;
+    margin-top: 120px;
     margin-left: 60px;
     border-radius: 16px;
     width: 150px;
-    padding: 10px;
+    padding: 5px;
    
     font-size: medium;
 
@@ -431,15 +452,17 @@ cursor: pointer;
 
   }
   .bargraph{
-    position: relative;
+      left: 350px;
+    position: absolute;
     display: flex;
     float: left;
+    margin-top: 40px;
     margin-left: 20px;
     flex-direction: column;
-    width: 400px ;
-    height: 300px ;
-    margin: 10px;
-    background-color:#fff;
+    width: 320px ;
+    height: 200px ;
+   
+    background-color:rgb(219, 15, 15);
     background-clip: border-box;
     border: 1px solid #e7eaed;
     border-radius: 16px;
@@ -479,5 +502,18 @@ cursor: pointer;
     margin-bottom: 0.75rem;
   }
   
+  /* Create an active/current "tab button" class */
+.cards_item button.active {
+    background-color: rgb(197, 21, 21);
+  }
   
+  /* Style the tab content */
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+  }
   
