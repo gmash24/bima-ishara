@@ -96,31 +96,18 @@ body{
 .toggle{
     position:fixed;
 }
-.dashboard{
-  
-  color: blue;
-  width: 300px;
-  align-content: flex-start;
-}
-
-
-
 
 .main{
 
     position: relative; 
-    width:100%;
+   min-width:100%;
     min-height: 100vh;
     background: #e1dcf5fd;
     transition: 0.5s;
-    
     display: inline-block;
      
 }
-.main.active{
-    width:calc(100%-200px) ;
-    left: 90px;
-}
+
 
 .main .searchcontainer
 
@@ -128,27 +115,25 @@ body{
 {    margin-top: 20px;
       border-radius: 16px;
     margin-left: 20px;
-    width: 360px;;
-    height: 1200px;
+
+    height: 100vh;
     display: flex;
     background-color: #ffff;
     position: relative;
+    float: left;
     
    
     }
-    
-    .main .info{
-
-        margin-top: 20px;
-        border-radius: 16px;
-    margin-left: 20px;
-    width: auto;
-    height: auto;
+.info{
+    float: left;
+     margin-top: 20px;
+     border-radius: 16px;
+    left:  20px;
+    width: 60%;
+    height: 100vh;
     display: flex;
-    background-color: rgba(201, 184, 184, 0.267);
-    flex-direction: column;
-    
-    position: absolute;
+    background-color: #ffff;
+    position: relative;
     
     
     
@@ -159,7 +144,8 @@ body{
 
 /*search box css*/
 
-    .searchbox {
+     .searchbox {
+        position: absolute;
         margin-top: 20px;
         display: flex;
         height: 50px;
@@ -188,9 +174,9 @@ body{
     .slidercontainer {
         /* Content is centered horizontally */
         align-items: center;
-        position: absolute;
+        position: relative;
         margin-top: 100px;
-        margin-right: 80px;
+     margin-right: 40px;
         right: 0;
         width: 320px;
         display: flex;
@@ -267,20 +253,16 @@ body{
         height: auto;
         border-radius: 16px;
         margin-left: 20px;
-        
-
-        
-       
     }
  .cards_item{
     
         /* There will be 4 cards per row */
-     flex-basis: 50%;
+        position: absolute;
      padding-left: 8px;
      padding-right: 8px;
      margin-top: 20px;
      display: flex;
-     height: auto;
+     height: fit-content;
      overflow:scroll !important;
      background-color: rgb(246, 242, 242);
     }
